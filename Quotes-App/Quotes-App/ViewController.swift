@@ -39,6 +39,11 @@ class ViewController: UIViewController {
             }
         }
     }
+    @IBAction func link(_ sender: UIButton) {
+        if let url = URL(string: "https://developer.apple.com") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     
 
 }
